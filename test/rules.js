@@ -51,7 +51,19 @@ test('arrow parens', function (t) {
 })
 
 test('arrow parens', function (t) {
-  var code = 'var multiply = x, y => x * y'
+  var code = 'var multiply = x, y => x * y\n'
+  t.equal(cli.executeOnText(code).errorCount, 1)
+  t.end()
+})
+
+test('two whitespaces are good', function (t) {
+  var code = 'var hello = () => {\n  return \'hello\'\n}\n'
+  t.equal(cli.executeOnText(code).errorCount, 0)
+  t.end()
+})
+
+test('four whitespaces are bad', function (t) {
+  var code = 'var hello = () => {\n    return \'hello\'\n}\n'
   t.equal(cli.executeOnText(code).errorCount, 1)
   t.end()
 })
