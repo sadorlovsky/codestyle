@@ -67,3 +67,27 @@ test('four whitespaces are bad', function (t) {
   t.equal(cli.executeOnText(code).errorCount, 1)
   t.end()
 })
+
+test('arrow-spacing before and after is good', function (t) {
+  var code = 'var foo = () => {}'
+  t.equal(cli.executeOnText(code).errorCount, 0)
+  t.end()
+})
+
+test('arrow-spacing only after is bad', function (t) {
+  var code = 'var foo = ()=> {}'
+  t.equal(cli.executeOnText(code).errorCount, 1)
+  t.end()
+})
+
+test('arrow-spacing only before is bad', function (t) {
+  var code = 'var foo = () =>{}'
+  t.equal(cli.executeOnText(code).errorCount, 1)
+  t.end()
+})
+
+test('no arrow-spacing both before and after is bad', function (t) {
+  var code = 'var foo = ()=>{}'
+  t.equal(cli.executeOnText(code).errorCount, 2)
+  t.end()
+})

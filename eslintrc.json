@@ -23,6 +23,7 @@
     "semi": [2, "never"],
     "quotes": [2, "single", "avoid-escape"],
     "arrow-parens": [2, "as-needed"],
-    "indent": [2, 2, { "SwitchCase": 1 }]
+    "indent": [2, 2, { "SwitchCase": 1 }],
+    "arrow-spacing": [2, { "before": true, "after": true }]
   }
 }
