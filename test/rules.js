@@ -19,3 +19,39 @@ test('no semi is good', function (t) {
   t.equal(cli.executeOnText(code).errorCount, 0)
   t.end()
 })
+
+test('single quotes are good', function (t) {
+  var code = 'var foo = \'hello\''
+  t.equal(cli.executeOnText(code).errorCount, 0)
+  t.end()
+})
+
+test('double quotes are bad', function (t) {
+  var code = 'var foo = "hello"'
+  t.equal(cli.executeOnText(code).errorCount, 1)
+  t.end()
+})
+
+test('arrow parens', function (t) {
+  var code = 'var double = x => x * x'
+  t.equal(cli.executeOnText(code).errorCount, 0)
+  t.end()
+})
+
+test('arrow parens', function (t) {
+  var code = 'var double = (x) => x * x'
+  t.equal(cli.executeOnText(code).errorCount, 1)
+  t.end()
+})
+
+test('arrow parens', function (t) {
+  var code = 'var multiply = (x, y) => x * y'
+  t.equal(cli.executeOnText(code).errorCount, 0)
+  t.end()
+})
+
+test('arrow parens', function (t) {
+  var code = 'var multiply = x, y => x * y'
+  t.equal(cli.executeOnText(code).errorCount, 1)
+  t.end()
+})

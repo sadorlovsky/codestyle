@@ -20,6 +20,8 @@
   },
 
   "rules": {
-    "semi": [2, "never"]
+    "semi": [2, "never"],
+    "quotes": [2, "single", "avoid-escape"],
+    "arrow-parens": [2, "as-needed"]
   }
 }
