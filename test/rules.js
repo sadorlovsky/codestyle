@@ -69,25 +69,43 @@ test('four whitespaces are bad', function (t) {
 })
 
 test('arrow-spacing before and after is good', function (t) {
-  var code = 'var foo = () => {}'
+  var code = 'var foo = () => {}\n'
   t.equal(cli.executeOnText(code).errorCount, 0)
   t.end()
 })
 
 test('arrow-spacing only after is bad', function (t) {
-  var code = 'var foo = ()=> {}'
+  var code = 'var foo = ()=> {}\n'
   t.equal(cli.executeOnText(code).errorCount, 1)
   t.end()
 })
 
 test('arrow-spacing only before is bad', function (t) {
-  var code = 'var foo = () =>{}'
+  var code = 'var foo = () =>{}\n'
   t.equal(cli.executeOnText(code).errorCount, 1)
   t.end()
 })
 
 test('no arrow-spacing both before and after is bad', function (t) {
-  var code = 'var foo = ()=>{}'
+  var code = 'var foo = ()=>{}\n'
   t.equal(cli.executeOnText(code).errorCount, 2)
+  t.end()
+})
+
+test('block-spacing is good', function (t) {
+  var code = 'function foo () { return true }\n'
+  t.equal(cli.executeOnText(code).errorCount, 0)
+  t.end()
+})
+
+test('no block-spacing is bad', function (t) {
+  var code = 'function foo () {return true}\n'
+  t.equal(cli.executeOnText(code).errorCount, 2)
+  t.end()
+})
+
+test('async-await works', function (t) {
+  var code = 'async function load () {\n  await fetch(\'/feed\')\n}\n'
+  t.equal(cli.executeOnText(code).errorCount, 0)
   t.end()
 })
