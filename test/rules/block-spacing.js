@@ -1,5 +1,5 @@
 import test from 'ava'
-import cli from './_helper'
+import { cli } from './_helper'
 
 test('block-spacing is good', t => {
   const code = 'export function foo () { return true }\n'

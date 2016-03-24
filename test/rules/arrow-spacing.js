@@ -1,5 +1,5 @@
 import test from 'ava'
-import cli from './_helper'
+import { cli } from './_helper'
 
 test('arrow-spacing before and after is good', t => {
   const code = 'export const foo = () => {}\n'

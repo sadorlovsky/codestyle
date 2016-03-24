@@ -1,5 +1,5 @@
 import test from 'ava'
-import cli from './_helper'
+import { cli } from './_helper'
 
 test('no parens is good', t => {
   const code = 'export const double = x => x * 2\n'

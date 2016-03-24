@@ -1,5 +1,5 @@
 import test from 'ava'
-import cli from './_helper'
+import { cli } from './_helper'
 
 test('async/await', t => {
   const code = 'export async function load () {\n  await fetch(\'/feed\')\n}\n'

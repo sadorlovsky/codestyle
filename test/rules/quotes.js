@@ -1,5 +1,5 @@
 import test from 'ava'
-import cli from './_helper'
+import { cli } from './_helper'
 
 test('single quotes are good', t => {
   const code = 'export const foo = \'hello\'\n'

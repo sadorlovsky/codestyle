@@ -1,5 +1,5 @@
 import test from 'ava'
-import cli from './_helper'
+import { cli } from './_helper'
 
 test('two whitespaces are good', t => {
   const code = 'export const hello = () => {\n  return \'hello\'\n}\n'

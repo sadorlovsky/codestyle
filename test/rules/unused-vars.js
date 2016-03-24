@@ -1,5 +1,5 @@
 import test from 'ava'
-import cli from './_helper'
+import { cli } from './_helper'
 
 test('unused var is bad', t => {
   const code = 'const a = 10\n'
