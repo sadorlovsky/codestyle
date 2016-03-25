@@ -21,12 +21,17 @@
     "window": false
   },
 
+  "plugins": [
+    "import-order"
+  ],
+
   "rules": {
     "arrow-parens": [2, "as-needed"],
     "arrow-spacing": [2, { "before": true, "after": true }],
     "block-spacing": [2, "always"],
     "eol-last": 2,
     "eqeqeq": 2,
+    "import-order/import-order": 2,
     "indent": [2, 2, { "SwitchCase": 1 }],
     "jsx-quotes": [2, "prefer-single"],
     "no-cond-assign": [2, "always"],
