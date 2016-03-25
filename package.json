@@ -8,12 +8,25 @@
   },
   "author": "Zach Orlovsky <sadorlovsky@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sadorlovsky/codestyle.git"
+  },
+  "keywords": [
+    "codestyle",
+    "eslint",
+    "config"
+  ],
+  "bugs": {
+    "url": "https://github.com/sadorlovsky/codestyle/issues"
+  },
+  "homepage": "https://github.com/sadorlovsky/codestyle",
+  "dependencies": {
+    "eslint-plugin-import-order": "^1.0.1",
+    "babel-eslint": "^6.0.0-beta.6"
+  },
   "devDependencies": {
     "ava": "^0.13.0",
-    "babel-eslint": "^6.0.0-beta.6",
     "eslint": "^2.4.0"
-  },
-  "dependencies": {
-    "eslint-plugin-import-order": "^1.0.1"
   }
 }
