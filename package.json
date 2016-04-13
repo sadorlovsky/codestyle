@@ -22,11 +22,14 @@
   },
   "homepage": "https://github.com/sadorlovsky/codestyle",
   "dependencies": {
-    "eslint-plugin-import-order": "^1.0.1",
-    "babel-eslint": "^6.0.0-beta.6"
+    "babel-eslint": "^6.0.2",
+    "eslint-plugin-ava": "^2.2.1",
+    "eslint-plugin-import-order": "^2.1.2"
   },
   "devDependencies": {
-    "ava": "^0.13.0",
-    "eslint": "^2.4.0"
+    "ava": "^0.14.0"
+  },
+  "peerDependencies": {
+    "eslint": "2.x"
   }
 }
