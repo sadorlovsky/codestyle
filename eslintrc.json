@@ -22,7 +22,8 @@
   },
 
   "plugins": [
-    "import-order"
+    "import-order",
+    "ava"
   ],
 
   "rules": {
