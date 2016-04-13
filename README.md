@@ -4,6 +4,8 @@
 
 An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs) for my preferable code style.
 
+**WORK IN PROGRESS**
+
 ## Install
 
 ```bash
