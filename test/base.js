@@ -6,17 +6,17 @@ function isObject (obj) {
 }
 
 test('parser options are ok', t => {
-  t.ok(isObject(config.parserOptions))
+  t.truthy(isObject(config.parserOptions))
 })
 
 test('env is ok', t => {
-  t.ok(isObject(config.env))
+  t.truthy(isObject(config.env))
 })
 
 test('globals are ok', t => {
-  t.ok(isObject(config.globals))
+  t.truthy(isObject(config.globals))
 })
 
 test('rules are ok', t => {
-  t.ok(isObject(config.rules))
+  t.truthy(isObject(config.rules))
 })
