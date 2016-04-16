@@ -6,10 +6,16 @@ An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-co
 
 **WORK IN PROGRESS**
 
+## THE RULES OF FIGHT CLUB
+
+  - **Two spaces**
+  - **Single quotes**
+  - **No semicolons**
+
 ## Install
 
 ```bash
-npm install @sadorlovsky/eslint-config
+npm install --save-dev @sadorlovsky/eslint-config
 ```
 
 ## Usage
