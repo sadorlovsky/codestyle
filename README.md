@@ -18,6 +18,6 @@ Add this to your .eslintrc file:
 
 ```json
 {
-  "extends": "sadorlovsky"
+  "extends": "@sadorlovsky"
 }
 ```
