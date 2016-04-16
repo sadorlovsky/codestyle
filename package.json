@@ -17,6 +17,10 @@
     "eslint",
     "config"
   ],
+  "files": [
+    "index.js",
+    "eslintrc.json"
+  ],
   "bugs": {
     "url": "https://github.com/sadorlovsky/codestyle/issues"
   },
