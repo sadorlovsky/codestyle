@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "ava",
-    "find:unused": "eslint-find-rules --unused --no-error"
+    "find:unused": "eslint-find-rules -u -n"
   },
   "author": "Zach Orlovsky <sadorlovsky@gmail.com>",
   "license": "MIT",
