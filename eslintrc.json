@@ -27,6 +27,7 @@
   ],
 
   "rules": {
+    "accessor-pairs": ["error", { "setWithoutGet": true, "getWithoutSet": false }],
     "arrow-parens": ["error", "as-needed"],
     "arrow-spacing": ["error", { "before": true, "after": true }],
     "block-spacing": ["error", "always"],
