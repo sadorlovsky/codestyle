@@ -1,5 +1,5 @@
 import test from 'ava'
-import { cli } from './_helper'
+import check from '../helpers/check'
 
 test('set without get is bad', t => {
   const code = `
@@ -9,7 +9,7 @@ test('set without get is bad', t => {
     }
   }
 `
-  t.is(cli.executeOnText(code).errorCount, 1)
+  t.is(check(code).errors, 1)
 })
 
 test('set with get is good', t => {
@@ -23,7 +23,7 @@ test('set with get is good', t => {
     }
   }
 `
-  t.is(cli.executeOnText(code).errorCount, 0)
+  t.is(check(code).errors, 0)
 })
 
 test('get without set is good', t => {
@@ -34,5 +34,5 @@ test('get without set is good', t => {
     }
   }
 `
-  t.is(cli.executeOnText(code).errorCount, 0)
+  t.is(check(code).errors, 0)
 })

@@ -1,6 +1,6 @@
 /*eslint ava/max-asserts: ["error", 2]*/
 import test from 'ava'
-import { check } from './_helper'
+import check from '../helpers/check'
 
 test('skip asserts - it\'s ok', t => {
   const code = `

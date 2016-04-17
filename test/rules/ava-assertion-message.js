@@ -1,5 +1,5 @@
 import test from 'ava'
-import { cli } from './_helper'
+import check from '../helpers/check'
 
 test('no assertion message is good', t => {
   const code = `
@@ -8,7 +8,7 @@ test('good test', t => {
   t.true(array.indexOf(value) !== -1)
 })
 `
-  t.is(cli.executeOnText(code).errorCount, 0)
+  t.is(check(code).errors, 0)
 })
 
 test('assertion message is bad', t => {
@@ -18,5 +18,5 @@ test('bad test', t => {
   t.true(array.indexOf(value) !== -1, 'value is not in array')
 })
 `
-  t.is(cli.executeOnText(code).errorCount, 1)
+  t.is(check(code).errors, 1)
 })

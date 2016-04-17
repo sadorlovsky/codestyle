@@ -1,6 +1,6 @@
 /*eslint ava/max-asserts: ["error", 3]*/
 import test from 'ava'
-import { check } from './_helper'
+import check from '../helpers/check'
 
 test('using unknown modifiers is bad', t => {
   const code = `

@@ -1,5 +1,5 @@
 import test from 'ava'
-import { cli } from './_helper'
+import check from '../helpers/check'
 
 test('only one assert is good', t => {
   const code = `
@@ -8,7 +8,7 @@ test('good test', t => {
   t.true(array.indexOf(value) !== -1)
 })
 `
-  t.is(cli.executeOnText(code).errorCount, 0)
+  t.is(check(code).errors, 0)
 })
 
 test('more than one asserts is bad', t => {
@@ -19,5 +19,5 @@ test('bad test', t => {
   t.true(array.indexOf(value) !== -1)
 })
 `
-  t.is(cli.executeOnText(code).errorCount, 1)
+  t.is(check(code).errors, 1)
 })

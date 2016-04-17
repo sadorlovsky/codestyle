@@ -1,9 +1,9 @@
 import test from 'ava'
-import { cli } from './_helper'
+import check from '../helpers/check'
 
 test('omit braces when there is a single statement is good', t => {
   const code = 'export const foo = () => \'bar\'\n'
-  t.is(cli.executeOnText(code).errorCount, 0)
+  t.is(check(code).errors, 0)
 })
 
 test('not omit braces when there is a single statement is good too', t => {
@@ -11,7 +11,7 @@ test('not omit braces when there is a single statement is good too', t => {
   return 'bar'
 }
 `
-  t.is(cli.executeOnText(code).errorCount, 0)
+  t.is(check(code).errors, 0)
 })
 
 test('braces when there is a multiline statement are good', t => {
@@ -20,5 +20,5 @@ test('braces when there is a multiline statement are good', t => {
   return result
 }
 `
-  t.is(cli.executeOnText(code).errorCount, 0)
+  t.is(check(code).errors, 0)
 })

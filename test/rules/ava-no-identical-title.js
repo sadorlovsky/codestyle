@@ -1,5 +1,5 @@
 import test from 'ava'
-import { cli } from './_helper'
+import check from '../helpers/check'
 
 test('two tests with identical names are bad', t => {
   const code = `
@@ -12,7 +12,7 @@ test('pass', t => {
   t.pass()
 })
 `
-  t.is(cli.executeOnText(code).errorCount, 1)
+  t.is(check(code).errors, 1)
 })
 
 test('two tests with different names are good', t => {
@@ -26,5 +26,5 @@ test('pass too', t => {
   t.pass()
 })
 `
-  t.is(cli.executeOnText(code).errorCount, 0)
+  t.is(check(code).errors, 0)
 })

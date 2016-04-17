@@ -1,5 +1,5 @@
 import test from 'ava'
-import { cli } from './_helper'
+import check from '../helpers/check'
 
 test('good import order', t => {
   const code = `
@@ -8,7 +8,7 @@ import lodash from 'lodash'
 console.log(fs)
 console.log(lodash)
 `
-  t.is(cli.executeOnText(code).errorCount, 0)
+  t.is(check(code).errors, 0)
 })
 
 test('bad import order', t => {
@@ -18,5 +18,5 @@ import fs from 'fs'
 console.log(fs)
 console.log(lodash)
 `
-  t.is(cli.executeOnText(code).errorCount, 1)
+  t.is(check(code).errors, 1)
 })
