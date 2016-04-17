@@ -66,6 +66,6 @@
     "ava/use-test": "error",
     "ava/use-true-false": "off",
 
-    "import-order/import-order": "error"
+    "import-order/import-order": ["error", { "order": ["builtin", "external", "parent", "sibling", "index"] }]
   }
 }
