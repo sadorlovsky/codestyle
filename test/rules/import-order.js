@@ -3,20 +3,21 @@ import check from '../helpers/check'
 
 test('good import order', t => {
   const code = `
+/*eslint no-unused-vars: "off"*/
 import fs from 'fs'
 import lodash from 'lodash'
-console.log(fs)
-console.log(lodash)
+import lib from './lib'
 `
   t.is(check(code).errors, 0)
 })
 
 test('bad import order', t => {
   const code = `
+/*eslint no-unused-vars: "off"*/
+import lib from './lib'
 import lodash from 'lodash'
 import fs from 'fs'
-console.log(fs)
-console.log(lodash)
 `
-  t.is(check(code).errors, 1)
+  console.log(check(code).linterMessage)
+  t.is(check(code).errors, 2)
 })
