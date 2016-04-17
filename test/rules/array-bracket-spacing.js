@@ -11,12 +11,12 @@ test('no spaces between array brackets is good', t => {
   t.is(cli.executeOnText(code).errorCount, 0)
 })
 
-test('single element', t => {
+test('no spaces in array of single element', t => {
   const code = 'export const a = [{}]\n'
   t.is(cli.executeOnText(code).errorCount, 0)
 })
 
-test('array of objects', t => {
+test('np spaces in array of objects', t => {
   const code = 'export const a = [{}, {}]\n'
   t.is(cli.executeOnText(code).errorCount, 0)
 })
@@ -26,12 +26,12 @@ test('spaces in array of objects', t => {
   t.is(cli.executeOnText(code).errorCount, 2)
 })
 
-test('array of arrays', t => {
+test('no spaces in array of arrays', t => {
   const code = 'export const a = [[], []]\n'
   t.is(cli.executeOnText(code).errorCount, 2)
 })
 
-test('array of arrays', t => {
+test('spaces in array of arrays', t => {
   const code = 'export const a = [ [], [] ]\n'
   t.is(cli.executeOnText(code).errorCount, 0)
 })
