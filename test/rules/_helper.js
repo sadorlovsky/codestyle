@@ -4,7 +4,7 @@ const CLIEngine = eslint.CLIEngine
 
 const cli = new CLIEngine({
   useEslintrc: false,
-  configFile: '../../eslintrc.json'
+  configFile: '../../index.js'
 })
 
 const reporter = function (code) {
@@ -13,4 +13,13 @@ const reporter = function (code) {
   return formatter(report.results)
 }
 
-module.exports = { cli, reporter }
+const check = function (code) {
+  const result = cli.executeOnText(code)
+  return {
+    errors: result.errorCount,
+    warns: result.warningCount,
+    linterMessage: reporter(code)
+  }
+}
+
+module.exports = { cli, reporter, check }
