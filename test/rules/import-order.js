@@ -18,6 +18,5 @@ import lib from './lib'
 import lodash from 'lodash'
 import fs from 'fs'
 `
-  console.log(check(code).linterMessage)
   t.is(check(code).errors, 2)
 })
