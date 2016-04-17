@@ -1,9 +1,9 @@
-/*eslint ava/max-asserts: ["error", 3]*/
 import test from 'ava'
 import check from '../helpers/check'
 
 test('using unknown modifiers is bad', t => {
   const code = `
+/*eslint ava/max-asserts: ["error", 3]*/
 import test from 'ava'
 test('bad test', t => {
   t.foo()
@@ -16,6 +16,7 @@ test('bad test', t => {
 
 test('usage only known modifiers is good', t => {
   const code = `
+/*eslint ava/max-asserts: ["error", 3]*/
 import test from 'ava'
 test('good test', t => {
   t.is()
