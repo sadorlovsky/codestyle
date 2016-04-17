@@ -8,9 +8,11 @@ An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-co
 
 ## THE RULES OF FIGHT CLUB
 
-  - **Two spaces**
-  - **Single quotes**
-  - **No semicolons**
+- **Two spaces**
+- **Single quotes**
+- **No semicolons**
+
+See all rules [here](eslintrc.json#L29).
 
 ## Nice code example
 
