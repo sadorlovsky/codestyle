@@ -4,7 +4,7 @@ import check from '../helpers/check'
 test('set without get is bad', t => {
   const code = `
   export const o = {
-    set a(value) {
+    set a (value) {
       this.value = value
     }
   }
