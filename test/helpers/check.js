@@ -1,4 +1,4 @@
-import { CLIEngine } from 'eslint'
+const CLIEngine = require('eslint').CLIEngine
 
 const cli = new CLIEngine({
   useEslintrc: false,
@@ -16,4 +16,4 @@ const check = code => {
   }
 }
 
-export default check
+module.exports = check

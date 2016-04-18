@@ -8,11 +8,6 @@
     "lint": "eslint test",
     "find:unused": "eslint-find-rules -u"
   },
-  "ava": {
-    "require": [
-      "babel-register"
-    ]
-  },
   "author": "Zach Orlovsky <sadorlovsky@gmail.com>",
   "license": "MIT",
   "repository": {
