@@ -19,3 +19,12 @@ export class Doge {}
 `
   t.is(check(code).errors, 0)
 })
+
+test('jsx', t => {
+  const code = `
+export function hello (name) {
+  return <div>Hello {name}</div>
+}
+`
+  t.is(check(code).errors, 0)
+})
