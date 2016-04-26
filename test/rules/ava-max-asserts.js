@@ -5,6 +5,8 @@ test('only one assert is good', t => {
   const code = `
 import test from 'ava'
 test('good test', t => {
+  const array = [1, 2, 3]
+  const value = 1
   t.true(array.indexOf(value) !== -1)
 })
 `
@@ -15,6 +17,8 @@ test('more than one asserts is bad', t => {
   const code = `
 import test from 'ava'
 test('bad test', t => {
+  const array = [1, 2, 3]
+  const value = 1
   t.true(array.length === 5)
   t.true(array.indexOf(value) !== -1)
 })

@@ -5,6 +5,8 @@ test('no assertion message is good', t => {
   const code = `
 import test from 'ava'
 test('good test', t => {
+  const array = [1, 2, 3]
+  const value = 1
   t.true(array.indexOf(value) !== -1)
 })
 `
@@ -15,6 +17,8 @@ test('assertion message is bad', t => {
   const code = `
 import test from 'ava'
 test('bad test', t => {
+  const array = [1, 2, 3]
+  const value = 1
   t.true(array.indexOf(value) !== -1, 'value is not in array')
 })
 `
