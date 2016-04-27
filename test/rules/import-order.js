@@ -4,6 +4,7 @@ import check from '../helpers/check'
 test('good import order', t => {
   const code = `
 /*eslint no-unused-vars: "off"*/
+/*eslint import/no-extraneous-dependencies: "off"*/
 import fs from 'fs'
 import lodash from 'lodash'
 import lib from './lib'
@@ -14,6 +15,7 @@ import lib from './lib'
 test('bad import order', t => {
   const code = `
 /*eslint no-unused-vars: "off"*/
+/*eslint import/no-extraneous-dependencies: "off"*/
 import lib from './lib'
 import lodash from 'lodash'
 import fs from 'fs'

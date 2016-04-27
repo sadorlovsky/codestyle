@@ -22,8 +22,8 @@
   },
 
   "plugins": [
-    "import-order",
-    "ava"
+    "ava",
+    "import"
   ],
 
   "rules": {
@@ -191,6 +191,18 @@
     "ava/use-test": "error",
     "ava/use-true-false": "off",
 
-    "import-order/import-order": ["error", { "order": ["builtin", "external", "parent", "sibling", "index"] }]
+    "import/default": "error",
+    "import/export": "error",
+    "import/imports-first": "error",
+    "import/named": "error",
+    "import/no-amd": "error",
+    "import/no-commonjs": "error",
+    "import/no-duplicates": "error",
+    "import/no-extraneous-dependencies": "error",
+    "import/no-named-as-default": "error",
+    "import/no-named-as-default-member": "error",
+    "import/no-namespace": "off",
+    "import/no-nodejs-modules": "off",
+    "import/order": ["error", { "groups": ["builtin", "external", "internal", "parent", "sibling", "index"] }]
   }
 }

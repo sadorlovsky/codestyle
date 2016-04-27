@@ -3,6 +3,7 @@ import check from '../helpers/check'
 
 test('async/await', t => {
   const code = `
+/* eslint import/no-extraneous-dependencies: "off" */
 import fetch from 'fetch'
 export async function load () {
   await fetch('/feed')
@@ -13,6 +14,7 @@ export async function load () {
 
 test('decorator', t => {
   const code = `
+/* eslint import/no-extraneous-dependencies: "off" */
 import bind from 'bind'
 @bind
 export class Doge {}
