@@ -38,7 +38,7 @@
     "block-spacing": ["error", "always"],
     "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
     "callback-return": "error",
-    "camelcase": ["error", { "properties": "always" }],
+    "camelcase": "off",
     "comma-dangle": ["error", "never"],
     "comma-spacing": ["error", { "before": false, "after": true }],
     "comma-style": ["error", "last"],
