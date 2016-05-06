@@ -3,6 +3,7 @@ import check from '../helpers/check'
 
 test('async/await', t => {
   const code = `
+/* eslint import/extensions: "off" */
 /* eslint import/no-extraneous-dependencies: "off" */
 import fetch from 'fetch'
 export async function load () {
@@ -14,6 +15,7 @@ export async function load () {
 
 test('decorator', t => {
   const code = `
+/* eslint import/extensions: "off" */
 /* eslint import/no-extraneous-dependencies: "off" */
 import bind from 'bind'
 @bind
@@ -24,6 +26,8 @@ export class Doge {}
 
 test('jsx', t => {
   const code = `
+/* eslint import/extensions: "off" */
+/* eslint import/no-extraneous-dependencies: "off" */
 export function hello (name) {
   return <div>Hello {name}</div>
 }

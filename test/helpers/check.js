@@ -1,14 +1,17 @@
+/* eslint import/no-commonjs: "off" */
+const path = require('path')
 const CLIEngine = require('eslint').CLIEngine
 
 const cli = new CLIEngine({
   useEslintrc: false,
-  configFile: '../../index.js'
+  configFile: path.join(__dirname, '..', '..', 'index.js')
 })
 
 const formatter = CLIEngine.getFormatter()
 
 const check = code => {
   const report = cli.executeOnText(code)
+
   return {
     errors: report.errorCount,
     warns: report.warningCount,

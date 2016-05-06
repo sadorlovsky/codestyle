@@ -3,6 +3,7 @@ import check from '../helpers/check'
 
 test('good import order', t => {
   const code = `
+/* eslint import/extensions: "off" */
 /*eslint no-unused-vars: "off"*/
 /*eslint import/no-extraneous-dependencies: "off"*/
 import fs from 'fs'
@@ -14,6 +15,7 @@ import lib from './lib'
 
 test('bad import order', t => {
   const code = `
+/* eslint import/extensions: "off" */
 /*eslint no-unused-vars: "off"*/
 /*eslint import/no-extraneous-dependencies: "off"*/
 import lib from './lib'
