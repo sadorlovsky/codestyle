@@ -232,6 +232,9 @@ module.exports = {
     'yield-star-spacing': ['error', 'after'],
     'yoda': 'error',
 
+    'ava/assertion-arguments': ['error', {
+      'message': 'never'
+    }],
     'ava/assertion-message': ['error', 'never'],
     'ava/max-asserts': ['error', 1],
     'ava/no-cb-test': 'error',
