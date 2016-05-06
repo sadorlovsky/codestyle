@@ -1,6 +1,6 @@
 import test from 'ava'
 import isPlainObj from 'is-plain-obj'
-import config from '../index'
+import config from './index'
 
 test('parser', t => {
   t.true(isPlainObj(config.parserOptions))
