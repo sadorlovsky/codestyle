@@ -1,4 +1,6 @@
 /* eslint import/no-extraneous-dependencies: "off" */
+/* eslint import/no-unresolved: "off" */
+
 // only ES2015
 import fetch from 'fetch' // empty line after import
 
