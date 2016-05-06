@@ -259,11 +259,7 @@ module.exports = {
 
     'import/default': 'error',
     'import/export': 'error',
-    'import/extensions': ['error', {
-      'js': 'never',
-      'json': 'always',
-      'css': 'always'
-    }],
+    'import/extensions': 'off',
     'import/imports-first': 'error',
     'import/named': 'error',
     'import/no-amd': 'error',
