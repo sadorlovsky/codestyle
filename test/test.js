@@ -4,16 +4,8 @@ import { CLIEngine } from 'eslint'
 import isPlainObj from 'is-plain-obj'
 import config from '../index'
 
-test('parser', t => {
-  t.true(isPlainObj(config.parserOptions))
-})
-
-test('env', t => {
-  t.true(isPlainObj(config.env))
-})
-
-test('rules', t => {
-  t.true(isPlainObj(config.rules))
+test('config', t => {
+  t.true(isPlainObj(config))
 })
 
 test('code', t => {
