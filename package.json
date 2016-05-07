@@ -1,6 +1,6 @@
 {
   "name": "@sadorlovsky/eslint-config",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Sad Orlovsky Codestyle - ESLint Shareable Config",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,9 @@
     "config"
   ],
   "files": [
-    "index.js"
+    "index.js",
+    "ava.js",
+    "react.js"
   ],
   "bugs": {
     "url": "https://github.com/sadorlovsky/codestyle/issues"

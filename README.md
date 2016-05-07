@@ -35,15 +35,25 @@ export const fetchData = uri => { // no parens if single argument
 // empty line at the end of code
 ```
 
-## Install
+## Usage
+
+You need ESLint
 
 ```bash
 npm install --save-dev eslint@2.9.0
-npm install --save-dev babel-eslint@6.0.3 eslint-plugin-ava@2.3.1 eslint-plugin-import@1.7.0 eslint-plugin-react@5.0.1
-npm install --save-dev @sadorlovsky/eslint-config
 ```
 
-## Usage
+Also you need babel-parser and import-plugin
+
+```bash
+npm install --save-dev babel-eslint@6.0.3 eslint-plugin-import@1.7.0
+```
+
+Finally install this shareable config
+
+```bash
+npm install --save-dev @sadorlovsky/eslint-config
+```
 
 Add this to your .eslintrc file:
 
@@ -52,3 +62,65 @@ Add this to your .eslintrc file:
   "extends": "@sadorlovsky"
 }
 ```
+
+### Usage with AVA
+
+```bash
+npm install --save-dev eslint-plugin-ava@2.3.1
+```
+
+```json
+{
+  "extends": [
+    "@sadorlovsky",
+    "@sadorlovsky/eslint-config/ava"
+  ]
+}
+```
+
+### Usage with react
+
+```bash
+npm install --save-dev eslint-plugin-react@5.0.1
+```
+
+```json
+{
+  "extends": [
+    "@sadorlovsky",
+    "@sadorlovsky/eslint-config/react"
+  ]
+}
+```
+
+### Usage with both
+
+```json
+{
+  "extends": [
+    "@sadorlovsky",
+    "@sadorlovsky/eslint-config/ava",
+    "@sadorlovsky/eslint-config/react"
+  ]
+}
+```
+
+### You can override any option
+
+```json
+{
+  "extends": [
+    "@sadorlovsky",
+    "@sadorlovsky/eslint-config/ava",
+    "@sadorlovsky/eslint-config/react"
+  ],
+
+  "rules": {
+    "semi": ["error", "always"]
+  }
+}
+```
+
+## License
+
+MIT © [Zach Orlovsky](https://orlovsky.rocks)
