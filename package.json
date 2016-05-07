@@ -1,11 +1,10 @@
 {
   "name": "@sadorlovsky/eslint-config",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Sad Orlovsky Codestyle - ESLint Shareable Config",
   "main": "index.js",
   "scripts": {
     "test": "ava",
-    "lint": "eslint test",
     "find:unused": "eslint-find-rules -u"
   },
   "author": "Zach Orlovsky <sadorlovsky@gmail.com>",
@@ -15,8 +14,10 @@
     "url": "https://github.com/sadorlovsky/codestyle.git"
   },
   "keywords": [
+    "sadorlovsky",
     "codestyle",
     "eslint",
+    "shareable",
     "config"
   ],
   "files": [

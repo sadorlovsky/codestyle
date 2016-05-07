@@ -38,6 +38,8 @@ export const fetchData = uri => { // no parens if single argument
 ## Install
 
 ```bash
+npm install --save-dev eslint@2.9.0
+npm install --save-dev babel-eslint@6.0.3 eslint-plugin-ava@2.3.1 eslint-plugin-import@1.7.0 eslint-plugin-react@5.0.1
 npm install --save-dev @sadorlovsky/eslint-config
 ```
 
