@@ -12,7 +12,7 @@ An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-co
 - **Single quotes**
 - **No semicolons**
 
-See all rules [here](index.js#L25).
+See all rules [here](index.js#L23).
 
 ## Nice code example
 
