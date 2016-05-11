@@ -28,6 +28,7 @@ module.exports = {
       'ignoreCase': true
     }],
     'react/jsx-no-literals': 'off',
+    'react/jsx-no-target-blank': 'error',
     'react/jsx-no-undef': 'error',
     'react/jsx-pascal-case': 'error',
     'react/jsx-sort-props': 'off',
