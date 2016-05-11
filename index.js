@@ -317,6 +317,7 @@ module.exports = {
     'import/newline-after-import': 'error',
     'import/no-amd': 'error',
     'import/no-commonjs': 'error',
+    'import/no-deprecated': 'error',
     'import/no-duplicates': 'error',
     'import/no-extraneous-dependencies': 'error',
     'import/no-mutable-exports': 'error',
