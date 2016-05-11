@@ -1,6 +1,6 @@
 {
   "name": "@sadorlovsky/eslint-config",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Sad Orlovsky Codestyle - ESLint Shareable Config",
   "main": "index.js",
   "scripts": {
