@@ -224,7 +224,7 @@ module.exports = {
       'typeof': true
     }],
     'no-undef-init': 'error',
-    'no-undefined': 'error',
+    'no-undefined': 'off',
     'no-underscore-dangle': 'off',
     'no-unexpected-multiline': 'off',
     'no-unmodified-loop-condition': 'error',
