@@ -4,8 +4,6 @@
 
 An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs) for my preferable code style.
 
-**WORK IN PROGRESS**
-
 ## THE RULES OF FIGHT CLUB
 
 - **Two spaces**
@@ -40,13 +38,13 @@ export const fetchData = uri => { // no parens if single argument
 You need ESLint
 
 ```bash
-npm install --save-dev eslint@2.9.0
+npm install --save-dev eslint
 ```
 
 Also you need babel-parser and import-plugin
 
 ```bash
-npm install --save-dev babel-eslint@6.0.3 eslint-plugin-import@1.7.0
+npm install --save-dev babel-eslint eslint-plugin-import
 ```
 
 Finally install this shareable config
@@ -66,7 +64,7 @@ Add this to your .eslintrc file:
 ### Usage with AVA
 
 ```bash
-npm install --save-dev eslint-plugin-ava@2.3.1
+npm install --save-dev eslint-plugin-ava
 ```
 
 ```json
@@ -78,10 +76,10 @@ npm install --save-dev eslint-plugin-ava@2.3.1
 }
 ```
 
-### Usage with react
+### Usage with React
 
 ```bash
-npm install --save-dev eslint-plugin-react@5.0.1
+npm install --save-dev eslint-plugin-react
 ```
 
 ```json
