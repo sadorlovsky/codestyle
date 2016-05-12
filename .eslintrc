@@ -2,5 +2,10 @@
   "extends": [
     "./index.js",
     "./ava.js"
-  ]
+  ],
+
+  "rules": {
+    "import/default": "off",
+    "import/no-commonjs": "off"
+  }
 }
