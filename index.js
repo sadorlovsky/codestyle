@@ -142,9 +142,7 @@ module.exports = {
     'no-extra-bind': 'error',
     'no-extra-boolean-cast': 'error',
     'no-extra-label': 'error',
-    'no-extra-parens': ['error', 'all', {
-      'conditionalAssign': false
-    }],
+    'no-extra-parens': ['error', 'functions'],
     'no-extra-semi': 'error',
     'no-fallthrough': 'error',
     'no-floating-decimal': 'error',
