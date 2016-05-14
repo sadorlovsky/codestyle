@@ -2,6 +2,16 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.8.0] - 2016-05-14
+### Added
+- React specific code test
+- Configs and tests linting
+- `object-property-newline` rule
+- `avoidQuotes: true` option to `object-shorthand` rule
+
+### Changed
+- update dependencies
+
 ## [0.7.0] - 2016-05-12
 ### Changed
 - Update README
@@ -62,6 +72,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 0.1.0 - 2016-04-16
 
+[0.8.0]: https://github.com/sadorlovsky/codestyle/compare/v0.7.0...v0.8.0
 [0.7.0]: https://github.com/sadorlovsky/codestyle/compare/v0.6.0...v0.7.0
 [0.6.0]: https://github.com/sadorlovsky/codestyle/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/sadorlovsky/codestyle/compare/v0.4.0...v0.5.0
