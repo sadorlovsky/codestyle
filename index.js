@@ -251,6 +251,9 @@ module.exports = {
     'no-whitespace-before-property': 'error',
     'no-with': 'error',
     'object-curly-spacing': ['error', 'always'],
+    'object-property-newline': ['error', {
+      'allowMultiplePropertiesPerLine': true
+    }],
     'object-shorthand': ['error', 'always'],
     'one-var': ['error', 'never'],
     'one-var-declaration-per-line': 'off',
