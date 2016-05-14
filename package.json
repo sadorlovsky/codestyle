@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "ava",
+    "lint": "eslint .",
     "release": "npmpub",
     "find:unused": "eslint-find-rules -u"
   },
