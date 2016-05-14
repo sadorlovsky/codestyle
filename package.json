@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "ava",
+    "release": "npmpub",
     "find:unused": "eslint-find-rules -u"
   },
   "author": "Zach Orlovsky <sadorlovsky@gmail.com>",
@@ -40,7 +41,8 @@
     "eslint-plugin-ava": "^2.3.1",
     "eslint-plugin-import": "^1.8.0",
     "eslint-plugin-react": "^5.1.1",
-    "is-plain-obj": "^1.1.0"
+    "is-plain-obj": "^1.1.0",
+    "npmpub": "^3.1.0"
   },
   "peerDependencies": {
     "babel-eslint": "^6.0.3",
