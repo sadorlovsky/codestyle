@@ -254,7 +254,9 @@ module.exports = {
     'object-property-newline': ['error', {
       'allowMultiplePropertiesPerLine': true
     }],
-    'object-shorthand': ['error', 'always'],
+    'object-shorthand': ['error', 'always', {
+      'avoidQuotes': true
+    }],
     'one-var': ['error', 'never'],
     'one-var-declaration-per-line': 'off',
     'operator-assignment': ['error', 'never'],
