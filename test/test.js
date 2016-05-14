@@ -1,4 +1,3 @@
-import path from 'path'
 import test from 'ava'
 import { CLIEngine } from 'eslint'
 import isPlainObj from 'is-plain-obj'
@@ -11,9 +10,15 @@ test('config', t => {
 test('code', t => {
   const cli = new CLIEngine({
     useEslintrc: false,
-    configFile: path.join(__dirname, '..', 'index.js')
+    baseConfig: {
+      extends: [
+        '../index.js',
+        '../ava.js',
+        '../react.js'
+      ]
+    }
   })
-  const report = cli.executeOnFiles(['fixtures/code.js'])
+  const report = cli.executeOnFiles(['fixtures/code.js', 'fixtures/react.js'])
   const formatter = CLIEngine.getFormatter()
   console.log(formatter(report.results))
   t.is(report.errorCount, 0)
