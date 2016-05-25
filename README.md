@@ -38,19 +38,19 @@ export const fetchData = uri => { // no parens if single argument
 You need ESLint
 
 ```bash
-npm install --save-dev eslint
+$ npm install --save-dev eslint
 ```
 
 Also you need babel-parser and import-plugin
 
 ```bash
-npm install --save-dev babel-eslint eslint-plugin-import
+$ npm install --save-dev babel-eslint eslint-plugin-import
 ```
 
 Finally install this shareable config
 
 ```bash
-npm install --save-dev @sadorlovsky/eslint-config
+$ npm install --save-dev @sadorlovsky/eslint-config
 ```
 
 Add this to your .eslintrc file:
@@ -64,7 +64,7 @@ Add this to your .eslintrc file:
 ### Usage with AVA
 
 ```bash
-npm install --save-dev eslint-plugin-ava
+$ npm install --save-dev eslint-plugin-ava
 ```
 
 ```json
@@ -79,7 +79,7 @@ npm install --save-dev eslint-plugin-ava
 ### Usage with React
 
 ```bash
-npm install --save-dev eslint-plugin-react
+$ npm install --save-dev eslint-plugin-react
 ```
 
 ```json
