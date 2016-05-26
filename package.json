@@ -9,6 +9,9 @@
     "release": "npmpub",
     "find:unused": "eslint-find-rules -u"
   },
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "author": "Zach Orlovsky <sadorlovsky@gmail.com>",
   "license": "MIT",
   "repository": {
