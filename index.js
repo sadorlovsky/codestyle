@@ -307,6 +307,7 @@ module.exports = {
     'spaced-comment': 'off',
     'strict': 'off',
     'template-curly-spacing': 'error',
+    'unicode-bom': ['error', 'never'],
     'use-isnan': 'error',
     'valid-jsdoc': ['error', {
       'prefer': {
