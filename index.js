@@ -347,6 +347,6 @@ module.exports = {
     'import/order': ['error', {
       'groups': ['builtin', 'external', 'internal', 'parent', 'sibling', 'index']
     }],
-    'import/prefer-default-export': 'error'
+    'import/prefer-default-export': 'off'
   }
 }
