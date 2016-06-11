@@ -2,9 +2,24 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.9.0] - 2016-06-11
+### Added
+- `max-lines` rule
+- `no-mixed-operators` rule
+- `no-prototype-builtins` rule
+- `no-useless-rename` rule
+- `object-curly-newline` rule
+- `rest-spread-spacing` rule
+- `unicode-bom` rule
+
+### Changed
+- Update dependencies
+- Update eslint to 2.12.0
+- Disable `import/prefer-default-export` rule
+
 ## [0.8.1] - 2016-05-18
 ### Changed
-- update dependencies
+- Update dependencies
 
 ## [0.8.0] - 2016-05-14
 ### Added
@@ -76,6 +91,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 0.1.0 - 2016-04-16
 
+[0.9.0]: https://github.com/sadorlovsky/codestyle/compare/v0.8.1...v0.9.0
 [0.8.1]: https://github.com/sadorlovsky/codestyle/compare/v0.8.0...v0.8.1
 [0.8.0]: https://github.com/sadorlovsky/codestyle/compare/v0.7.0...v0.8.0
 [0.7.0]: https://github.com/sadorlovsky/codestyle/compare/v0.6.0...v0.7.0
