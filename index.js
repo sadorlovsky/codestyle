@@ -252,6 +252,11 @@ module.exports = {
     'no-useless-concat': 'error',
     'no-useless-constructor': 'error',
     'no-useless-escape': 'error',
+    'no-useless-rename': ['error', {
+      'ignoreDestructuring': false,
+      'ignoreImport': false,
+      'ignoreExport': false
+    }],
     'no-var': 'error',
     'no-void': 'error',
     'no-warning-comments': 'error',
