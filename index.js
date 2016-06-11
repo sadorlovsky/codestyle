@@ -288,6 +288,7 @@ module.exports = {
     'radix': 'off',
     'require-jsdoc': 'off',
     'require-yield': 'error',
+    'rest-spread-spacing': ['error', 'never'],
     'semi': ['error', 'never'],
     'semi-spacing': ['error', {
       'before': false,
