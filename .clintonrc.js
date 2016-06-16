@@ -1,6 +1,7 @@
 module.exports = {
   rules: {
     'ava': 'error',
+    'xo': 'off',
     'editorconfig': 'error',
     'license': ['error', 'MIT'],
     'no-callback': 'error',
