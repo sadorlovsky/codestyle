@@ -323,6 +323,7 @@ module.exports = {
     'yield-star-spacing': ['error', 'after'],
     'yoda': 'error',
 
+    'fp/no-class': 'error',
     'fp/no-delete': 'error',
     'fp/no-events': 'error',
     'fp/no-get-set': 'error',
@@ -332,8 +333,10 @@ module.exports = {
     'fp/no-mutation': ['error', {
       'commonjs': true
     }],
-    'fp/no-nil': 'error',
-    'fp/no-unused-expression': 'error',
+    'fp/no-nil': 'off',
+    'fp/no-this': 'off',
+    'fp/no-throw': 'off',
+    'fp/no-unused-expression': 'off',
 
     'import/default': 'error',
     'import/export': 'error',
