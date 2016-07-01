@@ -355,10 +355,11 @@ module.exports = {
     'import/no-duplicates': 'error',
     'import/no-extraneous-dependencies': 'error',
     'import/no-mutable-exports': 'error',
-    'import/no-named-as-default': 'error',
     'import/no-named-as-default-member': 'error',
+    'import/no-named-as-default': 'error',
     'import/no-namespace': 'off',
     'import/no-nodejs-modules': 'off',
+    'import/no-restricted-paths': 'off',
     'import/no-unresolved': 'error',
     'import/order': ['error', {
       'groups': ['builtin', 'external', 'internal', 'parent', 'sibling', 'index']
