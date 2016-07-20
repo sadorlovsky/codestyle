@@ -11,3 +11,4 @@ deploy:
   on:
     tags: true
     repo: sadorlovsky/codestyle
+    node: '4'
