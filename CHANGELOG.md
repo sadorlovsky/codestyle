@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.12.0] - 2016-07-20
+### Added
+- `multiline-ternary` rule with `off` value
+
+### Changed
+- Update ESLint to v3.1.1
+
 ## [0.11.0] - 2016-07-02
 ### Added
 - `import/no-restricted-paths` rule with `off` value
@@ -107,6 +114,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 0.1.0 - 2016-04-16
 
+[0.12.0]: https://github.com/sadorlovsky/codestyle/compare/v0.11.0...v0.12.0
 [0.11.0]: https://github.com/sadorlovsky/codestyle/compare/v0.10.0...v0.11.0
 [0.10.0]: https://github.com/sadorlovsky/codestyle/compare/v0.9.0...v0.10.0
 [0.9.0]: https://github.com/sadorlovsky/codestyle/compare/v0.8.1...v0.9.0
