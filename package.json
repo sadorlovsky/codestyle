@@ -55,5 +55,12 @@
     "eslint-plugin-fp": "^2.2.0",
     "eslint-plugin-import": "^1.14.0",
     "eslint-plugin-react": "^6.2.0"
+  },
+  "clinton": {
+    "rules": {
+      "xo": "off",
+      "ava": "error",
+      "filename-case": "off"
+    }
   }
 }
