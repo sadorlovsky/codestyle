@@ -15,7 +15,7 @@
     "clinton": "clinton",
     "release": "npmpub",
     "rules": "eslint-find-rules -u",
-    "check": "npm run test && npm run lint && npm run clinton && npm run rules",
+    "check": "npm run test && npm run lint && npm run clinton",
     "prepush": "npm run check",
     "prepublish": "npm run check"
   },
