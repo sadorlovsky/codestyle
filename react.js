@@ -35,6 +35,7 @@ module.exports = {
     'react/jsx-space-before-closing': ['error', 'always'],
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
+    'react/jsx-wrap-multilines': 'error',
     'react/no-danger': 'error',
     'react/no-deprecated': 'error',
     'react/no-did-mount-set-state': 'off',
@@ -51,13 +52,9 @@ module.exports = {
     'react/prefer-stateless-function': 'error',
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'warn',
-    'react/require-extension': ['warn', {
-      'extensions': ['.js', '.jsx']
-    }],
     'react/require-render-return': 'error',
     'react/self-closing-comp': 'error',
     'react/sort-comp': 'off',
-    'react/sort-prop-types': 'off',
-    'react/wrap-multilines': 'error'
+    'react/sort-prop-types': 'off'
   }
 }

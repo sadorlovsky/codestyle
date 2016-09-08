@@ -45,6 +45,7 @@ module.exports = {
     }],
     'callback-return': 'error',
     'camelcase': 'off',
+    'class-methods-use-this': 'error',
     'comma-dangle': ['error', 'never'],
     'comma-spacing': ['error', {
       'before': false,
@@ -62,6 +63,7 @@ module.exports = {
     'dot-notation': 'error',
     'eol-last': 'error',
     'eqeqeq': 'error',
+    'func-call-spacing': ['error', 'never'],
     'func-names': 'error',
     'func-style': ['error', 'declaration', {
       'allowArrowFunctions': true
@@ -154,6 +156,7 @@ module.exports = {
     'no-fallthrough': 'error',
     'no-floating-decimal': 'error',
     'no-func-assign': 'error',
+    'no-global-assign': 'error',
     'no-implicit-coercion': 'error',
     'no-implicit-globals': 'error',
     'no-implied-eval': 'error',
@@ -221,6 +224,8 @@ module.exports = {
     'no-spaced-func': 'off',
     'no-sparse-arrays': 'error',
     'no-sync': 'off',
+    'no-tabs': 'error',
+    'no-template-curly-in-string': 'error',
     'no-ternary': 'off',
     'no-this-before-super': 'error',
     'no-throw-literal': 'error',
@@ -238,6 +243,7 @@ module.exports = {
     'no-unneeded-ternary': 'error',
     'no-unreachable': 'error',
     'no-unsafe-finally': 'error',
+    'no-unsafe-negation': 'error',
     'no-unused-expressions': 'error',
     'no-unused-labels': 'error',
     'no-unused-vars': ['error', {
@@ -297,6 +303,7 @@ module.exports = {
       'after': true
     }],
     'sort-imports': 'off',
+    'sort-keys': 'off',
     'sort-vars': 'off',
     'space-before-blocks': 'error',
     'space-before-function-paren': 'error',
@@ -308,6 +315,7 @@ module.exports = {
     }],
     'spaced-comment': 'off',
     'strict': 'off',
+    'symbol-description': 'error',
     'template-curly-spacing': 'error',
     'unicode-bom': ['error', 'never'],
     'use-isnan': 'error',
@@ -324,6 +332,7 @@ module.exports = {
     'yield-star-spacing': ['error', 'after'],
     'yoda': 'error',
 
+    'fp/no-arguments': 'error',
     'fp/no-class': 'error',
     'fp/no-delete': 'error',
     'fp/no-events': 'error',
@@ -331,18 +340,25 @@ module.exports = {
     'fp/no-let': 'error',
     'fp/no-loops': 'error',
     'fp/no-mutating-assign': 'error',
+    'fp/no-mutating-methods': ['error', {
+      'allowedObjects': ['_', 'R']
+    }],
     'fp/no-mutation': ['error', {
       'commonjs': true
     }],
     'fp/no-nil': 'off',
+    'fp/no-proxy': 'off',
+    'fp/no-rest-parameters': 'off',
     'fp/no-this': 'off',
     'fp/no-throw': 'off',
     'fp/no-unused-expression': 'off',
+    'fp/no-valueof-field': 'error',
 
     'import/default': 'error',
     'import/export': 'error',
     'import/extensions': ['error', {
       'js': 'never',
+      'jsx': 'always',
       'json': 'always',
       'css': 'always'
     }],
