@@ -25,6 +25,15 @@
     "shareable",
     "config"
   ],
+  "nyc": {
+    "check-coverage": true,
+    "reporter": [
+      "lcovonly",
+      "text"
+    ],
+    "branches": 100,
+    "functions": 100
+  },
   "devDependencies": {
     "ava": "^3.3.0",
     "babel-eslint": "^10.0.3",
