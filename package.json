@@ -10,11 +10,9 @@
     "node": ">=4.0.0"
   },
   "scripts": {
-    "test": "ava",
-    "lint": "eslint .",
+    "test": "eslint . && ava",
     "release": "npmpub",
-    "rules": "eslint-find-rules -u",
-    "check": "npm run test && npm run lint"
+    "rules": "eslint-find-rules -u"
   },
   "files": [
     "index.js",
