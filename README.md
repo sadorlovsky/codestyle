@@ -45,7 +45,7 @@ Also you need `babel-parser` and some plugins
 yarn add --dev babel-eslint eslint-plugin-import eslint-plugin-fp
 ```
 
-Finally install this shareable config
+Finally, install this shareable config
 
 ```bash
 yarn add --dev @sadorlovsky/eslint-config
