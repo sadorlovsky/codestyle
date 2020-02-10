@@ -1,7 +1,5 @@
 # Sad Orlovsky Codestyle - ESLint Shareable Config
 
-[![Build Status](https://travis-ci.org/sadorlovsky/codestyle.svg)](https://travis-ci.org/sadorlovsky/codestyle)
-
 An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs) for my preferable code style.
 
 ## THE RULES OF FIGHT CLUB
@@ -118,7 +116,3 @@ $ npm install --save-dev eslint-plugin-react
   }
 }
 ```
-
-## License
-
-MIT © [Zach Orlovsky](https://orlovsky.rocks)
