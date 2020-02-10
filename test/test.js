@@ -22,7 +22,9 @@ test('lints', t => {
       ]
     }
   })
-  const report = cli.executeOnFiles(['fixtures/code.js', 'fixtures/react.js'])
+  const report = cli.executeOnFiles([
+    '../codestyle/test/fixtures'
+  ])
   const formatter = CLIEngine.getFormatter()
   console.log(formatter(report.results))
   t.is(report.errorCount, 0)
