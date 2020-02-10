@@ -1,13 +1,13 @@
 module.exports = {
-  'plugins': ['react'],
+  plugins: ['react'],
 
-  'settings': {
-    'react': {
-      'version': 'detect'
+  settings: {
+    react: {
+      version: 'detect'
     }
   },
 
-  'rules': {
+  rules: {
     'react/display-name': 'off',
     'react/forbid-prop-types': 'off',
     'react/jsx-boolean-value': 'error',
@@ -16,22 +16,22 @@ module.exports = {
     'react/jsx-equals-spacing': ['error', 'never'],
     'react/jsx-first-prop-new-line': ['error', 'multiline'],
     'react/jsx-handler-names': ['error', {
-      'eventHandlerPrefix': 'handle',
-      'eventHandlerPropPrefix': 'on'
+      eventHandlerPrefix: 'handle',
+      eventHandlerPropPrefix: 'on'
     }],
     'react/jsx-indent': ['error', 2],
     'react/jsx-indent-props': ['error', 2],
     'react/jsx-key': 'error',
     'react/jsx-max-props-per-line': ['error', {
-      'maximum': 3
+      maximum: 3
     }],
     'react/jsx-no-bind': ['error', {
-      'ignoreRefs': true,
-      'allowArrowFunctions': true,
-      'allowBind': false
+      ignoreRefs: true,
+      allowArrowFunctions: true,
+      allowBind: false
     }],
     'react/jsx-no-duplicate-props': ['error', {
-      'ignoreCase': true
+      ignoreCase: true
     }],
     'react/jsx-no-literals': 'off',
     'react/jsx-no-target-blank': 'error',
@@ -54,7 +54,7 @@ module.exports = {
     'react/no-direct-mutation-state': 'error',
     'react/no-is-mounted': 'error',
     'react/no-multi-comp': ['error', {
-      'ignoreStateless': true
+      ignoreStateless: true
     }],
     'react/no-set-state': 'off',
     'react/no-string-refs': 'error',

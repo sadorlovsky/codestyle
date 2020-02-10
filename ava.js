@@ -1,9 +1,9 @@
 module.exports = {
-  'plugins': ['ava'],
+  plugins: ['ava'],
 
-  'rules': {
+  rules: {
     'ava/assertion-arguments': ['error', {
-      'message': 'never'
+      message: 'never'
     }],
     'ava/max-asserts': 'off',
     'ava/no-cb-test': 'error',
