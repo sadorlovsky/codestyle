@@ -1,6 +1,6 @@
 {
   "name": "@sadorlovsky/eslint-config",
-  "version": "0.13.0",
+  "version": "0.14.0",
   "description": "Sad Orlovsky Codestyle - ESLint Shareable Config",
   "license": "MIT",
   "repository": "sadorlovsky/codestyle",
