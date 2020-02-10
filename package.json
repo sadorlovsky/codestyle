@@ -10,8 +10,7 @@
     "node": ">=10.0.0"
   },
   "scripts": {
-    "test": "eslint . && nyc ava",
-    "rules": "eslint-find-rules -u"
+    "test": "eslint . && nyc ava"
   },
   "files": [
     "index.js",
@@ -38,7 +37,6 @@
     "ava": "^3.3.0",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.8.0",
-    "eslint-find-rules": "^3.4.0",
     "eslint-plugin-ava": "^10.0.1",
     "eslint-plugin-fp": "^2.3.0",
     "eslint-plugin-import": "^2.20.1",
