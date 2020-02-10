@@ -7,17 +7,11 @@
   "author": "Zach Orlovsky <sadorlovsky@gmail.com>",
   "main": "index.js",
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=10.0.0"
   },
   "scripts": {
-    "test": "ava",
-    "lint": "eslint .",
-    "clinton": "clinton",
-    "release": "npmpub",
-    "rules": "eslint-find-rules -u",
-    "check": "npm run test && npm run lint && npm run clinton",
-    "prepush": "npm run check",
-    "prepublish": "npm run check"
+    "test": "eslint . && nyc ava",
+    "rules": "eslint-find-rules -u"
   },
   "files": [
     "index.js",
@@ -31,36 +25,35 @@
     "shareable",
     "config"
   ],
-  "dependencies": {},
+  "nyc": {
+    "check-coverage": true,
+    "reporter": [
+      "lcovonly",
+      "text"
+    ],
+    "branches": 100,
+    "functions": 100
+  },
   "devDependencies": {
-    "ava": "^0.16.0",
-    "babel-eslint": "^6.1.2",
-    "babel-preset-es2015": "^6.14.0",
-    "babel-register": "^6.14.0",
-    "clinton": "^0.8.0",
-    "eslint": "^3.4.0",
-    "eslint-find-rules": "^1.13.1",
-    "eslint-plugin-ava": "^3.0.0",
-    "eslint-plugin-fp": "^2.2.0",
-    "eslint-plugin-import": "^1.14.0",
-    "eslint-plugin-react": "^6.2.0",
-    "husky": "^0.11.7",
-    "is-plain-obj": "^1.1.0",
-    "npmpub": "^3.1.0"
+    "ava": "^3.3.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-find-rules": "^3.4.0",
+    "eslint-plugin-ava": "^10.0.1",
+    "eslint-plugin-fp": "^2.3.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-react": "^7.18.3",
+    "husky": "^4.2.1",
+    "is-plain-obj": "^2.1.0",
+    "nyc": "^15.0.0",
+    "react": "^16.12.0"
   },
   "peerDependencies": {
-    "babel-eslint": "^6.1.2",
-    "eslint": "^3.4.0",
-    "eslint-plugin-ava": "^3.0.0",
-    "eslint-plugin-fp": "^2.2.0",
-    "eslint-plugin-import": "^1.14.0",
-    "eslint-plugin-react": "^6.2.0"
-  },
-  "clinton": {
-    "rules": {
-      "xo": "off",
-      "ava": "error",
-      "filename-case": "off"
-    }
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-plugin-ava": "^10.0.1",
+    "eslint-plugin-fp": "^2.3.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-react": "^7.18.3"
   }
 }

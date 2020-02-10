@@ -1,6 +1,12 @@
 module.exports = {
   'plugins': ['react'],
 
+  'settings': {
+    'react': {
+      'version': 'detect'
+    }
+  },
+
   'rules': {
     'react/display-name': 'off',
     'react/forbid-prop-types': 'off',
@@ -32,7 +38,12 @@ module.exports = {
     'react/jsx-no-undef': 'error',
     'react/jsx-pascal-case': 'error',
     'react/jsx-sort-props': 'off',
-    'react/jsx-space-before-closing': ['error', 'always'],
+    'react/jsx-tag-spacing': ['error', {
+      closingSlash: 'never',
+      beforeSelfClosing: 'always',
+      afterOpening: 'never',
+      beforeClosing: 'never'
+    }],
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
     'react/jsx-wrap-multilines': 'error',
