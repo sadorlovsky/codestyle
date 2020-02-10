@@ -7,11 +7,10 @@
   "author": "Zach Orlovsky <sadorlovsky@gmail.com>",
   "main": "index.js",
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=10.0.0"
   },
   "scripts": {
     "test": "eslint . && ava",
-    "release": "npmpub",
     "rules": "eslint-find-rules -u"
   },
   "files": [
@@ -38,8 +37,7 @@
     "eslint-plugin-import": "^1.14.0",
     "eslint-plugin-react": "^6.2.0",
     "husky": "^4.2.1",
-    "is-plain-obj": "^1.1.0",
-    "npmpub": "^3.1.0"
+    "is-plain-obj": "^2.1.0"
   },
   "peerDependencies": {
     "babel-eslint": "^6.1.2",
